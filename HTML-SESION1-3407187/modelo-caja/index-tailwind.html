@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body class="bg-[rgb(135,235,135)]">
-
-    <div class="flex items-start">
-
-        <div class="m-[120px] block w-[400px] h-[400px] pt-[30px] pr-[20px] pb-[5px] pl-[40px] 
-                    bg-[rgb(135,235,135)] border-t-[10px] border-t-black border-t-double 
-                    border-l-[10px] border-l-[rgb(55,109,204)] border-l-solid 
-                    border-right-[10px] border-r-purple-600 border-r-dashed 
-                    border-b-[3px] border-b-[rgb(0,242,255)] border-b-groove">
-            <p>Cuadro Original</p>
+<body>
+    <div class="block
+               bg-sky-400
+               w-[400px]
+               h-[400px]    
+               pt-[30px]
+               pr-[20px]
+               pb-[5px]
+               pl-[40px]
+               border-double
+               border-red-600
+               border-[10px]">
+        <div class="block
+                    bg-blue-700
+                    w-[200px]
+                    h-[200px]
+                    pt-[20px]
+                    pl-[10px]
+                    border-r-[10px]
+                    border-dotted
+                    border-green-600
+                    ">
+                    hijo
         </div>
-
-        <div class="mt-[120px] w-[300px] h-[300px] bg-white shadow-xl rounded-lg p-6 border-2 border-gray-800">
-            <h2 class="text-xl font-bold mb-4">Nuevo Panel Tailwind</h2>
-            <p class="text-gray-600">Este cuadro aparece a la derecha gracias a la clase <strong>flex</strong> del contenedor padre.</p>
-        </div>
-
     </div>
-
 </body>
-</html>
