@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Profiele</title>
     <style>
+        /* declarar fuentes*/
+            @font-face{
+             font-family: 'Inter';  
+             src: url('inter/Inter.ttf') format('truetype');
+             font-style: bold;
+             font-weight: 700;
+             font-display: swap;  
+
+            }
+            @font-face{
+             font-family: 'Inter';  
+             src: url('inter/Inter.ttf') format('truetype');
+             font-style: normal;
+             font-weight: 400;
+             font-display: swap;  
+
+            }
         .card {
             margin: 0;
             padding: 0;
@@ -12,6 +29,7 @@
 
         body{ 
             background-color: #e5e6e8;
+            font-family: 'Inter', sans-serif;
         }
         .card {
             display: block;
@@ -41,9 +59,38 @@
             border-radius: 50%;
             object-fit: cover;
             border: #fff solid 5px;
-            margin-top: -70px;
+            margin-top: -90px;
             margin-left: auto;
             margin-right: auto;
+        }
+        .card__nombre{
+            text-align: center;
+            letter-spacing: 3px;
+        }
+        .card__nombre--negrita{
+            font-weight: bold;
+        }
+        .card__profesion{
+            text-align: center;
+            color: #7acbc7;
+            margin-top: 0%;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+        .card__table{
+            display: block;
+            width: 55%;
+            height: auto;
+            margin: 20px auto;
+            font-size: 8px;
+        }
+        .card__table--celda{
+            padding-bottom: 5px;
+            padding-right: 5px;
+        }
+        .card__table--atributo{
+            font-weight: bold;
+            color: #7acbc7;
         }
     </style>
 </head>
@@ -52,6 +99,27 @@
         <div class="card__company"></div>
         <div class="card__flag"></div>
         <img src="../evidencias/perfil.jpg" alt="" class="card__imagen">
-    </div>
+        <p class="card__nombre">
+        Daniel <span class="card__nombre--negrita">Camargo</span>
+        </p>
+        <p class="card__profesion">
+            Aprendiz sena
+        </p>
+        <table class="card__table">
+            <tr>
+                <td class="card__table--atributo">Especialidad:</td>
+                <td class="card__table--celda">HTML</td>
+            </tr>
+            <tr>
+                <td class="card__table--atributo">gustos:</td>
+                <td class="card__table--celda">java-scrip</td>
+            </tr>
+            <tr>
+                <td class="card__table--atributo">Estado civil:</td>
+                <td class="card__table--celda">soltero</td>
+            </tr>
+        </table>
+            </div>
+    
 </body>
 </html>
