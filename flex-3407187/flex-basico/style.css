@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 400px;
+    gap: 10px;
+    background-color: aliceblue;
+    border: black 2px solid;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(62, 146, 255);
+    margin: 10px;
+    border: black dashed 2px;
+}

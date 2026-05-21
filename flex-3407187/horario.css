@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 10px;
+    width: 98%;
+    height: 500px;
+    background-color: white;
+    border: 2px solid rgb(185, 185, 185);
+    
+}
+
+.horas{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(185, 185, 185);
+    width: 20%;
+}
+.hora{
+    display: block;
+    border-top: 1px dashed rgb(123, 123, 123);
+    height: 28px;
+    text-align: center;
+    padding: 20px;
+}
+.hora:first-child{
+    border-top: none;
+}
+.materia{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+.dias{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.dia{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 2px solid darkgray;
+    flex-grow: 1;
+}
+.encabezado-dia{
+    display: block;
+    border-bottom:1px dashed rgb(123, 123, 123) ;
+    height: 70px;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+}
+.tarea{
+    position: relative;
+    left: 10px;
+    top: 72px;
+    width: 90%;
+    height: 68px;
+    background-color: rgb(164, 164, 164);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.base-datos{
+    position: relative;
+    left: 10px;
+    top: 219px;
+    width: 90%;
+    height: 68px;
+    background-color: rgb(164, 164, 164);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.manana{
+    position: relative;
+    left: 10px;
+    top: 5px;
+    width: 90%;
+    height: 205px;
+    text-align: center;
+    background-color: rgb(255, 208, 0);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.mdasst{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 90%;
+    height: 205px;
+    text-align: center;
+    background-color: rgb(55, 168, 255);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
